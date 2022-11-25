@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 // function to replace s with th
-void esses() {
-	char t = 't';
+void translate() {
+    char t = 't';
     char h = 'h';
     putchar(t);
     putchar(h);
@@ -30,7 +30,7 @@ void convert() {
 				if(sentence[next_char] == 's'|| sentence[next_char] == 'S') {
 					continue;
 				} else {
-					esses();
+					translate();
 				}
 			} else {
 				printf("%c", sentence[i]);
