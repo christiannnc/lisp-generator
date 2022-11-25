@@ -3,14 +3,14 @@
 #include <stdlib.h>
 
 // function to replace s with th
-char* esses() {
+void esses() {
 	char t = 't';
     char h = 'h';
     putchar(t);
     putchar(h);
 }
 
-int work() {
+void convert() {
 	char more = 'Y';
 	char sentence[100];
 	
@@ -23,11 +23,11 @@ int work() {
 		
 		int str_leng = strlen(sentence);
 		
-		
 		for(int i = 0; i < str_leng; i++) {
 			int next_char = i + 1;
+            
 			if(sentence[i] == 's' || sentence[i] == 'S') {
-				if(sentence[next_char] == 's' || sentence[next_char] == 'S') {
+				if(sentence[next_char] == 's'|| sentence[next_char] == 'S') {
 					continue;
 				} else {
 					esses();
@@ -46,5 +46,6 @@ int work() {
 }
 
 int main() {
-	work();
+	convert();
 }
+
